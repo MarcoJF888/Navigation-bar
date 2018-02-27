@@ -1,23 +1,10 @@
-package com.self.template.Act;
+package com.self.template;
 
-import android.app.Activity;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.KeyEvent;
 import android.view.Window;
-import android.view.WindowManager;
 import android.widget.RadioButton;
-import android.widget.Toast;
-
-import com.self.template.Fragment.AFragment;
-import com.self.template.Fragment.BFragment;
-import com.self.template.Fragment.CFragment;
-import com.self.template.Fragment.DFragment;
-import com.self.template.R;
-import com.self.template.Util.FragmentTabHandler;
-import com.self.template.View.FlowRadioGroup;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -44,10 +31,32 @@ public class HomeAct extends FragmentActivity {
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.win_home);
 
-        fragments.add(AFragment.newInstance());
-        fragments.add(BFragment.newInstance());
-        fragments.add(CFragment.newInstance());
-        fragments.add(DFragment.newInstance());
+
+
+        TabFragment homeFragment = new TabFragment();
+        Bundle bundle1 = new Bundle();
+        bundle1.putString(TabFragment.CONTENT,"首页");
+        homeFragment.setArguments(bundle1);
+        fragments.add(homeFragment);
+
+        TabFragment homeFragment2 = new TabFragment();
+        Bundle bundle2= new Bundle();
+        bundle2.putString(TabFragment.CONTENT,"资讯");
+        homeFragment2.setArguments(bundle2);
+        fragments.add(homeFragment2);
+
+        TabFragment homeFragment3 = new TabFragment();
+        Bundle bundle3 = new Bundle();
+        bundle3.putString(TabFragment.CONTENT,"发现");
+        homeFragment3.setArguments(bundle3);
+        fragments.add(homeFragment3);
+
+        TabFragment homeFragment4 = new TabFragment();
+        Bundle bundle4 = new Bundle();
+        bundle4.putString(TabFragment.CONTENT,"我的");
+        homeFragment4.setArguments(bundle4);
+        fragments.add(homeFragment4);
+
 
         rgs = (FlowRadioGroup) findViewById(R.id.tabMain);
 

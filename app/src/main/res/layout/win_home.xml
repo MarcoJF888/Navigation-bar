@@ -11,8 +11,7 @@
         android:layout_height="match_parent"
         android:layout_weight="1" />
 
-
-    <com.self.template.View.FlowRadioGroup
+    <com.self.template.FlowRadioGroup
         android:id="@+id/tabMain"
         android:layout_width="fill_parent"
         android:layout_height="48dp"
@@ -25,27 +24,26 @@
             android:id="@+id/btnHome"
             style="@style/main_tab"
             android:drawableTop="@drawable/btn_home_selector"
-            android:text="111" />
+            android:text="首页" />
 
         <RadioButton
             android:id="@+id/btnNews"
             style="@style/main_tab"
             android:drawableTop="@drawable/btn_home_selector"
-            android:text="222" />
+            android:text="资讯" />
 
         <RadioButton
             android:id="@+id/btnDiscovery"
             style="@style/main_tab"
             android:drawableTop="@drawable/btn_home_selector"
-            android:text="333" />
+            android:text="发现" />
 
         <RadioButton
             android:id="@+id/btnMe"
             style="@style/main_tab"
             android:drawableTop="@drawable/btn_home_selector"
-            android:text="444" />
+            android:text="我的" />
 
-    </com.self.template.View.FlowRadioGroup>
-
+    </com.self.template.FlowRadioGroup>
 
 </LinearLayout>

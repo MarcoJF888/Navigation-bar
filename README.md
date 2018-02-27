@@ -1,2 +1,2 @@
 #Template
-![image](https://github.com/ZouJianFeng-Marco/Navigation-bar/blob/master/screenshot/test.gif ) 
+简单好用的底部导航栏 

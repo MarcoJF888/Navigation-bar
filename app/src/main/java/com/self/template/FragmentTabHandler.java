@@ -1,4 +1,4 @@
-package com.self.template.Util;
+package com.self.template;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
